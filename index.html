@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto #2 Diseño web Esteban y Marco</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/mystyles.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <!-- Inicio del Header -->
+  <div class="container">
+    <header class="row">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <a class="navbar-brand" href="#section0">
+          <h3>UNABallot</h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="collapsibleNavbar">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link" href="#section1">Mis Votaciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section2">Busqueda de Votaciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section3">Participa en Votaciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section4">Ayuda por Favor!</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="col-sm-8">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </header>
+  </div>
+  <!-- Fin del Header -->
+  <!-- Inicio del Main -->
+  <main>
+    <section id="section0" class="container-fluid bg_section_1 espacio">
+      <article class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card text-white bg-info mb-3 text-center">
+              <div class="card-header">
+                <h2>Votaciones</h2>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <img class="rounded mx-auto d-block imgssize" src="/images/decision-making.png" />
+                    <img class="rounded mx-auto d-block imgssize"
+                      src="/images/kisspng-google-analytics-dashboard-business-analytics-comp-beat-advertising-5b3ec8900ec940.7923351515308412320606.png" />
+                    <br>
+                    <h5 class="card-title">Gestión de Votaciones</h5>
+                    <p class="card-text">Gestiona tus votaciones! <br>
+                      crea, comparte y consulta tus votaciones creadas.</p>
+                    <br>
+                    <a href="#section1" class="btn btn-warning btn-lg btn-block">IR</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-white bg-info mb-3 text-center">
+              <div class="card-header">
+                <h2>Busqueda</h2>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <img class="rounded mx-auto d-block imgssize" src="/images/klipartz.com (7).png" />
+                    <img class="rounded mx-auto d-block imgssize" src="/images/pregunta.png" />
+                    <br>
+                    <h5 class="card-title">Busqueda de Votaciones</h5>
+                    <p class="card-text">Busca las votaciones creadas ingresando un código de una votación creada
+                      previamente.</p>
+                    <br>
+                    <a href="#section2" class="btn btn-warning btn-lg">IR</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-white bg-info mb-3 text-center">
+              <div class="card-header">
+                <h2>Participación</h2>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <img class="rounded mx-auto d-block imgssize" src="/images/vote.png" />
+                    <img class="rounded mx-auto d-block imgssize" src="/images/recibevotos.png" />
+                    <br>
+                    <h5 class="card-title">Participar en votaciones</h5>
+                    <p class="card-text">Participa en votaciones creadas por otros usaurios al rededor del mundo por
+                      distintos usuarios!</p>
+                    <br>
+                    <a href="#section3" class="btn btn-warning btn-lg">IR</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section id="section1" class="container-fluid bg_section_2 espacio">
+      <article class="container">
+        <div class="row">
+          <div class="col">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-link active" id="nav-primer-tab" data-toggle="tab" href="#nav-primer" role="tab"
+                  aria-controls="nav-primer" aria-selected="true">Mis Votaciones</a>
+                <a class="nav-link" id="nav-segundo-tab" data-toggle="tab" href="#nav-segundo" role="tab"
+                  aria-controls="nav-segundo" aria-selected="false">Mis Participaciones</a>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-primer" role="tabpanel" aria-labelledby="nav-primer-tab">
+                <div class="row">
+                  <div class="col">
+                    <h1 class="text-center">Mis Votaciones</h1>
+                    <br>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                      Agregar
+                    </button>
+                    <br>
+                    <br>
+                    <div class="row">
+                      <div class="col">
+                        <div class="accordion" id="accordionExample">
+                          <!--  -->
+                          <div class="card">
+                            <div class="card-header" id="headingOne">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                  data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  Votación #1
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                              data-parent="#accordionExample">
+                              <div class="card-body">
+                                <div class="row no-gutters">
+                                  <form>
+                                    <div class="row">
+                                      <div class="col-6">
+                                        <div class="form-group">
+                                          <label for="nombreInput">Nombre:</label>
+                                          <input type="text" class="form-control" readonly name="nombre" value="">
+                                        </div>
+                                      </div>
+                                      <div class="col-6">
+                                        <div class="form-group">
+                                          <label for="descripcionInput">Descripcion</label>
+                                          <input type="text" class="form-control" readonly name="descripcion" value="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-3">
+                                        <div class="form-group">
+                                          <label for="fec_initInput">Fecha Inicio</label>
+                                          <input type="text" class="form-control" readonly name="fecha_inicio" value="">
+                                        </div>
+                                      </div>
+                                      <div class="col-3">
+                                        <div class="form-group">
+                                          <label for="fec_finInput">Fecha Final</label>
+                                          <input type="text" class="form-control" readonly name="fecha_final" value="">
+                                        </div>
+                                      </div>
+                                      <div class="col-6">
+                                        <div class="form-group">
+                                          <label for="fec_finInput">Código Para Compartir</label>
+                                          <input type="text" class="form-control" readonly name="fecha_final" value="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                      <div class="col text-center">
+                                        <h2>Pregunta</h2>
+                                        <div class="form-group">
+                                          <label for="fec_finInput">Que se pregunta?</label>
+                                          <input type="text" class="form-control" readonly name="fecha_final" value="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-4"></div>
+                                      <div class="col-md-4">
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <p>
+                                            <h3>
+                                              Opcion #1
+                                            </h3>
+                                            </p>
+                                          </div>
+                                          <div class="col-md-6">
+                                            <p>
+                                            <h3>
+                                              Opcion #1
+                                            </h3>
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-4"></div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--  -->
+                          <div class="card">
+                            <div class="card-header" id="headingTwo">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                  aria-controls="collapseTwo">
+                                  Votación #2
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                              data-parent="#accordionExample">
+                              <div class="card-body">
+                                <div class="row no-gutters">
+                                  <form>
+                                    <div class="row">
+                                      <div class="col-6">
+                                        <div class="form-group">
+                                          <label for="nombreInput">Nombre:</label>
+                                          <input type="text" class="form-control" readonly name="nombre" value="">
+                                        </div>
+                                      </div>
+                                      <div class="col-6">
+                                        <div class="form-group">
+                                          <label for="descripcionInput">Descripcion</label>
+                                          <input type="text" class="form-control" readonly name="descripcion" value="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-3">
+                                        <div class="form-group">
+                                          <label for="fec_initInput">Fecha Inicio</label>
+                                          <input type="text" class="form-control" readonly name="fecha_inicio" value="">
+                                        </div>
+                                      </div>
+                                      <div class="col-3">
+                                        <div class="form-group">
+                                          <label for="fec_finInput">Fecha Final</label>
+                                          <input type="text" class="form-control" readonly name="fecha_final" value="">
+                                        </div>
+                                      </div>
+                                      <div class="col-6">
+                                        <div class="form-group">
+                                          <label for="fec_finInput">Código Para Compartir</label>
+                                          <input type="text" class="form-control" readonly name="fecha_final" value="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                      <div class="col text-center">
+                                        <h2>Pregunta</h2>
+                                        <div class="form-group">
+                                          <label for="fec_finInput">Que se pregunta?</label>
+                                          <input type="text" class="form-control" readonly name="fecha_final" value="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-4"></div>
+                                      <div class="col-md-4">
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <p>
+                                            <h3>
+                                              Opcion #1
+                                            </h3>
+                                            </p>
+
+                                          </div>
+                                          <div class="col-md-6">
+                                            <p>
+                                            <h3>
+                                              Opcion #1
+                                            </h3>
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-4"></div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header" id="headingThree">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                  data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                  aria-controls="collapseThree">
+                                  Votación #3
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                              data-parent="#accordionExample">
+                              <div class="card-body">
+                                <div class="row no-gutters">
+                                  <form>
+                                    <div class="row">
+                                      <div class="col-6">
+                                        <div class="form-group">
+                                          <label for="nombreInput">Nombre:</label>
+                                          <input type="text" class="form-control" readonly name="nombre" value="">
+                                        </div>
+                                      </div>
+                                      <div class="col-6">
+                                        <div class="form-group">
+                                          <label for="descripcionInput">Descripcion</label>
+                                          <input type="text" class="form-control" readonly name="descripcion" value="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-3">
+                                        <div class="form-group">
+                                          <label for="fec_initInput">Fecha Inicio</label>
+                                          <input type="text" class="form-control" readonly name="fecha_inicio" value="">
+                                        </div>
+                                      </div>
+                                      <div class="col-3">
+                                        <div class="form-group">
+                                          <label for="fec_finInput">Fecha Final</label>
+                                          <input type="text" class="form-control" readonly name="fecha_final" value="">
+                                        </div>
+                                      </div>
+                                      <div class="col-6">
+                                        <div class="form-group">
+                                          <label for="fec_finInput">Código Para Compartir</label>
+                                          <input type="text" class="form-control" readonly name="fecha_final" value="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                      <div class="col text-center">
+                                        <h2>Pregunta</h2>
+                                        <div class="form-group">
+                                          <label for="fec_finInput">Que se pregunta?</label>
+                                          <input type="text" class="form-control" readonly name="fecha_final" value="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-4"></div>
+                                      <div class="col-md-4">
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <p>
+                                            <h3>
+                                              Opcion #1
+                                            </h3>
+                                            </p>
+
+                                          </div>
+                                          <div class="col-md-6">
+                                            <p>
+                                            <h3>
+                                              Opcion #1
+                                            </h3>
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-4"></div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header" id="headingFour">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                  data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                  aria-controls="collapseFour">
+                                  Votación #4
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                              data-parent="#accordionExample">
+                              <div class="card-body">
+                                <div class="row no-gutters">
+                                  <form>
+                                    <div class="row">
+                                      <div class="col-6">
+                                        <div class="form-group">
+                                          <label for="nombreInput">Nombre:</label>
+                                          <input type="text" class="form-control" readonly name="nombre" value="">
+                                        </div>
+                                      </div>
+                                      <div class="col-6">
+                                        <div class="form-group">
+                                          <label for="descripcionInput">Descripcion</label>
+                                          <input type="text" class="form-control" readonly name="descripcion" value="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-3">
+                                        <div class="form-group">
+                                          <label for="fec_initInput">Fecha Inicio</label>
+                                          <input type="text" class="form-control" readonly name="fecha_inicio" value="">
+                                        </div>
+                                      </div>
+                                      <div class="col-3">
+                                        <div class="form-group">
+                                          <label for="fec_finInput">Fecha Final</label>
+                                          <input type="text" class="form-control" readonly name="fecha_final" value="">
+                                        </div>
+                                      </div>
+                                      <div class="col-6">
+                                        <div class="form-group">
+                                          <label for="fec_finInput">Código Para Compartir</label>
+                                          <input type="text" class="form-control" readonly name="fecha_final" value="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                      <div class="col text-center">
+                                        <h2>Pregunta</h2>
+                                        <div class="form-group">
+                                          <label for="fec_finInput">Que se pregunta?</label>
+                                          <input type="text" class="form-control" readonly name="fecha_final" value="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-4"></div>
+                                      <div class="col-md-4">
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <p>
+                                            <h3>
+                                              Opcion #1
+                                            </h3>
+                                            </p>
+
+                                          </div>
+                                          <div class="col-md-6">
+                                            <p>
+                                            <h3>
+                                              Opcion #1
+                                            </h3>
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-4"></div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-segundo" role="tabpanel" aria-labelledby="nav-segundo-tab">
+                <div class="row">
+                  <div class="col">
+                    <h1 class="text-center">Mis Participaciones</h1>
+                    <br>
+                    <br>
+                    <div class="row">
+                      <div class="col">
+                        <div class="accordion" id="accordionExample">
+                          <!--  -->
+                          <div class="card">
+                            <div class="card-header" id="headingOne">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                  data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  Votación #1
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                              data-parent="#accordionExample">
+                              <div class="card-body">
+                                <div class="row no-gutters">
+                                  <form>
+                                    <div class="row">
+                                      <div class="col-6">
+                                        <div class="form-group">
+                                          <label for="nombreInput">Nombre:</label>
+                                          <input type="text" class="form-control" readonly name="nombre" value="">
+                                        </div>
+                                      </div>
+                                      <div class="col-6">
+                                        <div class="form-group">
+                                          <label for="descripcionInput">Descripcion</label>
+                                          <input type="text" class="form-control" readonly name="descripcion" value="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-3">
+                                        <div class="form-group">
+                                          <label for="fec_initInput">Fecha Inicio</label>
+                                          <input type="text" class="form-control" readonly name="fecha_inicio" value="">
+                                        </div>
+                                      </div>
+                                      <div class="col-3">
+                                        <div class="form-group">
+                                          <label for="fec_finInput">Fecha Final</label>
+                                          <input type="text" class="form-control" readonly name="fecha_final" value="">
+                                        </div>
+                                      </div>
+                                      <div class="col-6">
+                                        <div class="form-group">
+                                          <label for="fec_finInput">Código Para Compartir</label>
+                                          <input type="text" class="form-control" readonly name="fecha_final" value="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                      <div class="col text-center">
+                                        <h2>Pregunta</h2>
+                                        <div class="form-group">
+                                          <label for="fec_finInput">Que se pregunta?</label>
+                                          <input type="text" class="form-control" readonly name="fecha_final" value="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-4"></div>
+                                      <div class="col-md-4">
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <p>
+                                            <h3>
+                                              Opcion #1
+                                            </h3>
+                                            </p>
+                                          </div>
+                                          <div class="col-md-6">
+                                            <p>
+                                            <h3>
+                                              Opcion #1
+                                            </h3>
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-4"></div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--  -->
+                          <div class="card">
+                            <div class="card-header" id="headingTwo">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                  aria-controls="collapseTwo">
+                                  Votación #2
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                              data-parent="#accordionExample">
+                              <div class="card-body">
+                                <div class="row no-gutters">
+                                  <form>
+                                    <div class="row">
+                                      <div class="col-6">
+                                        <div class="form-group">
+                                          <label for="nombreInput">Nombre:</label>
+                                          <input type="text" class="form-control" readonly name="nombre" value="">
+                                        </div>
+                                      </div>
+                                      <div class="col-6">
+                                        <div class="form-group">
+                                          <label for="descripcionInput">Descripcion</label>
+                                          <input type="text" class="form-control" readonly name="descripcion" value="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-3">
+                                        <div class="form-group">
+                                          <label for="fec_initInput">Fecha Inicio</label>
+                                          <input type="text" class="form-control" readonly name="fecha_inicio" value="">
+                                        </div>
+                                      </div>
+                                      <div class="col-3">
+                                        <div class="form-group">
+                                          <label for="fec_finInput">Fecha Final</label>
+                                          <input type="text" class="form-control" readonly name="fecha_final" value="">
+                                        </div>
+                                      </div>
+                                      <div class="col-6">
+                                        <div class="form-group">
+                                          <label for="fec_finInput">Código Para Compartir</label>
+                                          <input type="text" class="form-control" readonly name="fecha_final" value="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                      <div class="col text-center">
+                                        <h2>Pregunta</h2>
+                                        <div class="form-group">
+                                          <label for="fec_finInput">Que se pregunta?</label>
+                                          <input type="text" class="form-control" readonly name="fecha_final" value="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-4"></div>
+                                      <div class="col-md-4">
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <p>
+                                            <h3>
+                                              Opcion #1
+                                            </h3>
+                                            </p>
+
+                                          </div>
+                                          <div class="col-md-6">
+                                            <p>
+                                            <h3>
+                                              Opcion #1
+                                            </h3>
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-4"></div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header" id="headingThree">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                  data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                  aria-controls="collapseThree">
+                                  Votación #3
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                              data-parent="#accordionExample">
+                              <div class="card-body">
+                                <div class="row no-gutters">
+                                  <form>
+                                    <div class="row">
+                                      <div class="col-6">
+                                        <div class="form-group">
+                                          <label for="nombreInput">Nombre:</label>
+                                          <input type="text" class="form-control" readonly name="nombre" value="">
+                                        </div>
+                                      </div>
+                                      <div class="col-6">
+                                        <div class="form-group">
+                                          <label for="descripcionInput">Descripcion</label>
+                                          <input type="text" class="form-control" readonly name="descripcion" value="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-3">
+                                        <div class="form-group">
+                                          <label for="fec_initInput">Fecha Inicio</label>
+                                          <input type="text" class="form-control" readonly name="fecha_inicio" value="">
+                                        </div>
+                                      </div>
+                                      <div class="col-3">
+                                        <div class="form-group">
+                                          <label for="fec_finInput">Fecha Final</label>
+                                          <input type="text" class="form-control" readonly name="fecha_final" value="">
+                                        </div>
+                                      </div>
+                                      <div class="col-6">
+                                        <div class="form-group">
+                                          <label for="fec_finInput">Código Para Compartir</label>
+                                          <input type="text" class="form-control" readonly name="fecha_final" value="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                      <div class="col text-center">
+                                        <h2>Pregunta</h2>
+                                        <div class="form-group">
+                                          <label for="fec_finInput">Que se pregunta?</label>
+                                          <input type="text" class="form-control" readonly name="fecha_final" value="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-4"></div>
+                                      <div class="col-md-4">
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <p>
+                                            <h3>
+                                              Opcion #1
+                                            </h3>
+                                            </p>
+
+                                          </div>
+                                          <div class="col-md-6">
+                                            <p>
+                                            <h3>
+                                              Opcion #1
+                                            </h3>
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-4"></div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header" id="headingFour">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                  data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                  aria-controls="collapseFour">
+                                  Votación #4
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                              data-parent="#accordionExample">
+                              <div class="card-body">
+                                <div class="row no-gutters">
+                                  <form>
+                                    <div class="row">
+                                      <div class="col-6">
+                                        <div class="form-group">
+                                          <label for="nombreInput">Nombre:</label>
+                                          <input type="text" class="form-control" readonly name="nombre" value="">
+                                        </div>
+                                      </div>
+                                      <div class="col-6">
+                                        <div class="form-group">
+                                          <label for="descripcionInput">Descripcion</label>
+                                          <input type="text" class="form-control" readonly name="descripcion" value="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-3">
+                                        <div class="form-group">
+                                          <label for="fec_initInput">Fecha Inicio</label>
+                                          <input type="text" class="form-control" readonly name="fecha_inicio" value="">
+                                        </div>
+                                      </div>
+                                      <div class="col-3">
+                                        <div class="form-group">
+                                          <label for="fec_finInput">Fecha Final</label>
+                                          <input type="text" class="form-control" readonly name="fecha_final" value="">
+                                        </div>
+                                      </div>
+                                      <div class="col-6">
+                                        <div class="form-group">
+                                          <label for="fec_finInput">Código Para Compartir</label>
+                                          <input type="text" class="form-control" readonly name="fecha_final" value="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                      <div class="col text-center">
+                                        <h2>Pregunta</h2>
+                                        <div class="form-group">
+                                          <label for="fec_finInput">Que se pregunta?</label>
+                                          <input type="text" class="form-control" readonly name="fecha_final" value="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-4"></div>
+                                      <div class="col-md-4">
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <p>
+                                            <h3>
+                                              Opcion #1
+                                            </h3>
+                                            </p>
+
+                                          </div>
+                                          <div class="col-md-6">
+                                            <p>
+                                            <h3>
+                                              Opcion #1
+                                            </h3>
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-4"></div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section id="section2" class="container-fluid bg_section_3 espacio">
+      <article class="container lastspace">
+        <h1 class="text-center UNABallot-white">Busqueda de Votaciones</h1>
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <form>
+              <div class="form-group text-center">
+                <label for="pregunta">ingresar nombre de la Votación: </label>
+                <input type="text" class="form-control" readonly name="pregunta" value="">
+                <br>
+                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal3">
+                  Buscar votación
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+      </article>
+    </section>
+    <section id="section3" class="container-fluid bg_section_4 espacio">
+      <article class="container lastspace">
+        <h1 class="text-center UNABallot-white">Participación de Votaciones</h1>
+        <div class="row ">
+          <div class="col-md-4"></div>
+          <div class="col-md-4 ">
+            <br>
+            <form>
+              <div class="form-group text-center">
+                <label for="pregunta">ingresar codigo de la Votación: </label>
+                <input type="text" class="form-control" readonly name="pregunta" value="">
+                <br>
+                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal2">
+                  Buscar y votar
+                </button>
+
+              </div>
+            </form>
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+
+      </article>
+    </section>
+    <section id="section4" class="container-fluid bg_section_5 espacio">
+      <article class="container lastspace text-center ">
+        <h1 class="text-center UNABallot-white">Ayuda por Favor</h1>
+        <br><br><br>
+        <h3>Pagina de mis votaciones</h3>
+        <img src="/images/misvotaciones.PNG" alt="">
+        <br>
+        <hr>
+        <br>
+        <h3>Busqueda de votacion por clave</h3>
+        <img src="/images/PArticipacionvotacion.PNG" alt="">
+        <br>
+        <hr>
+        <br>
+        <h3>Votaciones realizar y votaciones en las que participo</h3>
+        <img src="/images/EncuestaConsulta.PNG" alt="">
+        <br>
+        <hr>
+        <br>
+        <h3>Pagina para visualizar la votacion seleccionada</h3>
+        <img src="/images/buscado.PNG" alt="">
+        <br>
+        <hr>
+        <br>
+        <h3>Pagina para buscar votaciones por coincidencias</h3>
+        <img src="/images/busquedavotacion.PNG" alt="">
+        <br>
+        <hr>
+        <br>
+      </article>
+    </section>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title" id="exampleModalLabel">Create</h1>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="col-6">
+                  <div class="form-group">
+                    <label for="nombreInput">Nombre:</label>
+                    <input type="text" class="form-control" readonly name="nombre" value="">
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group">
+                    <label for="descripcionInput">Descripcion</label>
+                    <input type="text" class="form-control" readonly name="descripcion" value="">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-3">
+                  <div class="form-group">
+                    <label for="fec_initInput">Fecha Inicio</label>
+                    <input type="text" class="form-control" readonly name="fecha_inicio" value="">
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="form-group">
+                    <label for="fec_finInput">Fecha Final</label>
+                    <input type="text" class="form-control" readonly name="fecha_final" value="">
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col text-center">
+                  <h2>Pregunta</h2>
+                  <div class="form-group">
+                    <label for="fec_finInput">Que se pregunta?</label>
+                    <input type="text" class="form-control" readonly name="fecha_final" value="">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="fec_finInput">Opcion #1</label>
+                    <input type="text" class="form-control" readonly name="fecha_final" value="">
+                  </div>
+
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="fec_finInput">Opcion #2</label>
+                    <input type="text" class="form-control" readonly name="fecha_final" value="">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Crear</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title" id="exampleModalLabel2">Votación</h1>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="col text-center">
+                  <h2>Pregunta</h2>
+                  <div class="form-group">
+                    <label for="fec_finInput">Que se pregunta?</label>
+                    <input type="text" class="form-control" readonly name="fecha_final" value="">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="fec_finInput">Opcion #1</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="fec_finInput">Opcion #2</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <select class="custom-select custom-select-lg">
+                    <option selected>Seleccione una opción</option>
+                    <option value="1">Opción #1</option>
+                    <option value="2">Opción #2</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning btn-lg" data-dismiss="modal">Votar</button>
+            <button type="button" class="btn btn-danger btn-lg" data-dismiss="modal">Votar Nulo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title" id="exampleModalLabel3">Votaciones</h1>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Nombre de la Votación</th>
+                  <th scope="col">Creador</th>
+                  <th scope="col">Código de Acceso</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Votacion #1</td>
+                  <td>Creador 1</td>
+                  <td>Código de Acceso 1</td>
+                </tr>
+                <tr>
+                  <td>Votacion #2</td>
+                  <td>Creador 2</td>
+                  <td>Código de Acceso 2</td>
+                </tr>
+                <tr>
+                  <td>Votacion #3</td>
+                  <td>Creador 3</td>
+                  <td>Código de Acceso 3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning btn-lg" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- fin del Main -->
+  <!-- Inicio del Footer -->
+  <footer>
+    <div class="bottom section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <a class="nav-link" href="#section1">Mis Votaciones</a>
+          </div>
+          <div class="col">
+            <a class="nav-link" href="#section2">Busqueda de Votaciones</a>
+          </div>
+          <div class="col">
+            <a class="nav-link" href="#section3">Participa en Votaciones</a>
+          </div>
+          <div class="col">
+            <a class="nav-link" href="#section4">Ayuda por Favor!</a>
+          </div>
+          <div class="col">
+            <a class="nav-link" href="/login.html">Login</a>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <div class="copyright">
+              <p>© <span>2021</span> <a href="/index.html" class="transition">UNABallot</a> All rights reserved.</p>
+              <p>Esteban Espinoza Fallas y Marco Murillo Sanchez</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Fin Del Footer -->
+  <!-- Inicio de Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+  <script src="/js/myscripts.js"></script>
+  <!-- Final de Scripts -->
+</body>
+
+</html>
